@@ -15,7 +15,7 @@
 	<script src="https://smartmartcomuasandbox.bitbucket.io/ShatskyBBQ/sbModJs-0.1.3.min.js"></script>
 </head>
 <body>
-	<!-- sbModJs-0.1.3.min.* direct test -->
+	<!-- START sbModJs-0.1.3.* direct code -->
 	<style type="text/css">
 		/* sbModJs CSS sbMod-0.1.3.css */
 		.ec-form__cell.ec-form__cell--country,.ec-form__cell.ec-form__cell--company-name,.ec-form__cell.ec-form__cell--city,.ec-form__cell.ec-form__cell--postalcode{display:none !important}
@@ -69,6 +69,7 @@ function sbModJs_PrefillAddressData(){var a=typeof Ecwid.Cart,b=typeof Ecwid.Car
 $(document).ready(function(){console.log(sbModJs.msgHdr,"document ready");"object"==typeof Ecwid?(console.log(sbModJs.msgHdr,"Ecwid here"),Ecwid.OnAPILoaded.add(function(){console.log(sbModJs.msgHdr,"Ecwid storefront JS API has loaded, ini sequence start");sbModJs.storeId=Ecwid.getOwnerId();console.log(sbModJs.msgHdr,"storeId:",sbModJs.storeId);Ecwid.OnPageLoaded.add(sbModJs_OnPageLoaded);console.log(sbModJs.msgHdr,"sbModJs_OnPageLoaded listener added");Ecwid.OnCartChanged.add(sbModJs_OnCartChanged);
 console.log(sbModJs.msgHdr,"sbModJs_OnCartChanged listener added");$(document).on("input",".ec-form__cell--sbMod_deliverySlot input",sbModJs_OnDeliverySlotInput);console.log(sbModJs.msgHdr,"sbModJs_OnDeliverySlotInput listener added");sbModJs_IniExtraFields();sbModJs_PrefillAddressData();console.log(sbModJs.msgHdr,"ini sequence complete")}),console.log(sbModJs.msgHdr,"typeof $:",typeof $,"$.fn.jquery:",$.fn.jquery)):console.error(sbModJs.msgHdr,"no Ecwid here, can't start ini sequence")});
 	</script>
+	<!-- END sbModJs-0.1.3.* direct code -->
 	<h3>sandbox|Shatsky BBQ</h3>
 	<div id="dynamic-ec-store" class="hide-ec-dynamic-placeholder" style="display: block;">
 		<!-- Ecwid shopping cart plugin v 6.9.7 (partial) -->
